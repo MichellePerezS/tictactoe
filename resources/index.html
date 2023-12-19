@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <div class="score">
+        <h2>You: </h2> <h2>Them: </h2>
+    </div>
+    <table id="table-game">
+        <tr>
+            <td class="tdgame">
+                <div id="cell0" class="fixed" onclick="cellclick(this.id)"></div>
+            </td>
+
+            <td class="tdgame">
+                <div id="cell1" class="fixed" onclick="cellclick(this.id)"></div>
+            </td>
+
+            <td class="tdgame">
+                <div id="cell2" class="fixed" onclick="cellclick(this.id)"></div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tdgame">
+                <div id="cell3" class="fixed" onclick="cellclick(this.id)"></div>
+            </td>
+            <td class="tdgame">
+                <div id="cell4" class="fixed" onclick="cellclick(this.id)"></div>
+            </td>
+            <td class="tdgame">
+                <div id="cell5" class="fixed" onclick="cellclick(this.id)"></div>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="tdgame">
+                <div id="cell6" class="fixed" onclick="cellclick(this.id)"></div>
+            </td>
+            <td class="tdgame">
+                <div id="cell7" class="fixed" onclick="cellclick(this.id)"></div>
+            </td>
+            <td class="tdgame">
+                <div id="cell8" class="fixed" onclick="cellclick(this.id)"></div>
+            </td>
+        </tr>
+    </table>
+    <div class="players">
+        <h3>You: </h3> <h3>Them: </h3>
+    </div>
+
+    <!-- Botón para empezar el juego -->
+    <button id="startButton">Empezar el juego</button>
+
+    <!-- Cuadro de diálogo de opciones -->
+    <div id="option_dlg" class="model">
+        <div class="model-content">
+            <h2>How Would You Like To Play?</h2>
+            <h3>Difficulty</h3>
+            <label>
+                <input type="radio" name="Difficulty" id="r0" value="easy">
+                Easy
+            </label>
+            <label>
+                <input type="radio" name="Difficulty" id="r1" value="hard">
+                Hard
+            </label>
+            <button id="confirm_btn">Confirmar</button>
+        </div>
+    </div>
+</body>
+</html>
